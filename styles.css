@@ -1,0 +1,89 @@
+/* Image Styling */
+.home-image {
+    max-width: 100%; /* Ensure it does not exceed the container's width */
+    height: auto; /* Maintain the original aspect ratio */
+    display: inline-block; /* Prevent unnecessary scaling */
+    object-fit: contain; /* Ensure the entire image is displayed without cropping */
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('bg-img.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    color: #FFD700;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #FFA500;
+    color: white;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Container */
+.container {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px;
+    color: white; /* Ensure all text inside the container is black */
+}
+
+/* Optional: Specific Styling for Paragraphs in the Container */
+.container p {
+    color: white; /* Ensure paragraphs display in black */
+}
